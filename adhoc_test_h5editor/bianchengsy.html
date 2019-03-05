@@ -1,0 +1,834 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    
+	<title>
+		ab testing产品及服务_A/B测试工具-吆喝科技
+	</title>
+	<meta name="description" content="吆喝科技-A/B Testing为企业提供一站式的A/B测试分析系统,帮助企业高效率、低成本的提升用户获取、激活、留存、付费、成长等全生命周期的核心指标,快速提升转化率和运营效率！">
+	<meta name="keywords" content="A/B测试工具,ab testing,ab test方案">
+
+    <meta name="author" content="info@appadhoc.com">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="canonical" href="http://www.appadhoc.com/">
+    <link rel="icon" href="/favicon.c8c727ce.ico">
+    <link rel="stylesheet" href="styles/new-vendor.6e12cd43.css">
+    <script src="scripts/vendor/modernizr.cf086204.js"></script>
+    <meta name="google-site-verification" content="d5Qycne0FWDdSS5TfoqxAvhVI1MBgNONB5UF2cKsYf4" />
+    <meta name="baidu-site-verification" content="wXGZ5gsqHZ" />
+	<script type="text/javascript">
+        window.adhoc_domain_stat_api = 'http://data.hgaotest.com';
+        window.adhoc_domain_exp_api = 'http://experiment.hgaotest.com';
+        // 下面这两个写一个即可
+        window.adhoc_domain_isForbiddenSnap = true; // 是否禁止截图
+	</script>
+	<script src="scripts/plus/ab.plus.js" charset="utf-8"></script>
+	<!-- <script src="scripts/super/ab.plus.js" charset="utf-8"></script>-->
+    <!--<script src="scripts/vendor/ab.plus.js" charset="utf-8"></script>
+	  <script src="https://sdk.appadhoc.com/ab.plus.js" charset="utf-8"></script>-->
+	<!--<script src="https://sdk.appadhoc.com/ab.super.js" charset="utf-8"></script>-->
+	<script type="text/javascript">
+			adhoc('init', {
+				appKey: 'ADHOC_5ef8aa60-d2d1-483b-941a-242645d968d3',
+				defaultFlags: {flag: 0}, //编程模式必填：设置试验变量默认值，通常为0
+				domain: 'hgaotest.com'
+			})
+			
+			 
+	</script>
+
+    <script type="text/javascript">window._pt_lt = new Date().getTime();</script>
+
+    
+    <link rel="stylesheet" href="styles/productService.09dfc28f.css">
+    
+    <style>
+        .test-a-img a:after {
+            content: '';
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background: red;
+        }
+    </style>
+
+
+  </head>
+  <body>
+    <script src="scripts/jquery.6c7dba82.js"></script>
+ <script>
+  adhoc('on','MatchExperiment', function(a){
+				console.log(a);
+				
+			})
+			adhoc('on','Track', function(event) {
+				console.log(event);
+				
+			  // event 
+			  // {
+			  //  expids: ['xx-xxxxxx'],
+			  //  statname: 'PV',
+			  //  value: 1
+			  // }
+
+			 })
+  </script>
+ 
+<header class="ab-nav-container">
+    <div class="ab-nav-inner">
+        <a href="//www.appadhoc.com/" class="head-logo" title="A/B测试数据分析"></a>
+		<input type="button" value="上报" onclick="adhoc('getFlags', applyFlags)"/>
+        <div class="ab-nav-right">
+            <ul class="ab-nav-menu">
+                <li class="ab-pop-down-btn"><a href="javascript:void(0)" class="btn-no-border" target="_blank">产品及服务</a>
+                  <div class="ab-pop-down-layer">
+                    <div class="ab-pop-down-container" id="ab-pop-down-container">
+                      <ul class="ab-pop-down-content" id="ab-pop-down-content">
+                        <li><a href="//www.appadhoc.com/productService.html" target="_blank">产品概览</a></li>
+                        <li><a href="//www.appadhoc.com/productDetail.html" target="_blank">产品详情</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                
+                </li>
+                <li class="ab-pop-down-btn">
+                  <a href="javascript:void(0)" class="btn-no-border" >解决方案</a>
+
+                  <div class="ab-pop-down-layer">
+                    <div class="ab-pop-down-container" id="ab-pop-down-container">
+                      <ul class="ab-pop-down-content" id="ab-pop-down-content">
+                        <li><a href="//www.appadhoc.com/eshop.html" target="_blank">电商</a></li>
+                        <li><a href="//www.appadhoc.com/banking.html" target="_blank">金融</a></li>
+                        <li><a href="//www.appadhoc.com/education.html" target="_blank">教育</a></li>
+                        <li><a href="//www.appadhoc.com/trip.html" target="_blank">旅游</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </li>
+                <li class="ab-pop-down-btn">
+                  <a href="javascript:void(0)" class="btn-no-border" id="resource-center">资源中心</a>
+                  <div class="ab-pop-down-layer">
+                    <div class="ab-pop-down-container" id="ab-pop-down-container">
+                      <ul class="ab-pop-down-content" id="ab-pop-down-content">
+                        <li><a href="http://www.appadhoc.com/blog/category/instance/" target="_blank">案例</a></li>
+                        <li><a href="//www.appadhoc.com/startGuide.html" target="_blank">快速上手指南</a></li>
+                        <li><a href="//www.appadhoc.com/doc.html" target="_blank">文档中心</a></li>
+                        <li><a href="http://www.appadhoc.com/blog/" target="_blank">博客</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </li>
+                <li><a href="//www.appadhoc.com/aboutus.html" class="btn-no-border" target="_blank">关于我们</a></li>
+            </ul>
+            <div class="ab-nav-button-container">
+				
+                <a href="https://abtesting.appadhoc.com/#/" class="ab-nav-login btn-no-border">登录</a>
+                <a href="javascript:registerPopShow()" id="js-btn-apply03" class="ab-nav-register btn btn-nav-blue" onClick="adhoc('getFlags', applyFlags);adhoc('track', 'click1', 1, function(){ location.href = 'url' });">免费试用</a>
+            </div>
+        </div>
+		
+	<script LANGUAGE="JavaScript">
+		function newShow(){
+			location.href="demo1.html?ids="+ids+"&clientid="+clientid;
+		}
+
+	</script>
+   <script>
+   		  function applyFlags(flags) {
+			//applyFlags:callback函数名称
+			adhoc('track', 'click1', 1, function(error){
+				if(error){
+					//i don't know, maybe you can do something cool.
+				}else{
+
+				}
+			  });
+			if (flags.get('flag') === 1) {
+			  console.log("版本1");
+			  var ids = adhoc('getMatchedExpIds');
+			  console.log(ids);
+			var flag = flags.get('flag');
+			console.log('试验版本flag--'+flag);
+			// 例如: 获取可视化试验的版本信息
+			var exps = adhoc('getMatchedExps');
+			console.log(exps);
+			//获得clientid
+			var clientid = adhoc('getCurClientId');
+			console.log('试验的clientid--'+clientid);
+			// 隐藏元素
+			adhoc('hide','.ab-nav-right');
+			} else if (flags.get('flag') === 0) {
+			  console.log("原始版本");
+			} else {
+			  console.log("版本2");
+			}
+
+		  }
+	
+	
+		</script>
+		
+        <script type="text/javascript">
+
+        </script>
+        <div class="ab-nav-mobile-right" id="ab-nav-mobile-right">
+            <i class="line"></i>
+            <i class="line"></i>
+            <i class="line"></i>
+        </div>
+    </div>
+	
+</header>
+	
+<div class="ab-nav-menu-mobile">
+    <ul class="ab-nav-menu-mobile-container">
+        <li><a href="//www.appadhoc.com/productService.html" class="btn-no-border">产品及服务</a></li>
+        <li><a href="//www.appadhoc.com/#d" class="btn-no-border" id="js-btn-solve">解决方案</a></li>
+        <li><a href="//www.appadhoc.com/startGuide.html" class="btn-no-border">快速上手指南</a></li>
+        <li><a href="http://www.appadhoc.com/blog/" class="btn-no-border">博客</a></li>
+        <li><a href="//www.appadhoc.com/aboutus.html" class="btn-no-border">关于我们</a></li>
+        <li class="register"><a href="javascript:registerPopShow()"  class="btn-no-border htm-track" data-hmt-category="免费试用">免费试用</a></li>
+    </ul>
+
+</div>
+
+<section class="register-pop-container" style="z-index: 900">
+    <div class="register-pop-inner">
+        <div class="register-content">
+            <p class="reg-title sss234 ww234 sssdd rrrr" id="ab-reg-title">免费试用</p>
+
+            <p class="reg-tip">请勿使用IE7.0以下或其他过老的浏览器版本，否则无法及时处理您的申请。</p>
+
+            <form action="" class="reg-form" id="form">
+                <input type="text" class="input phone" placeholder="手机号">
+                <p class="error"></p>
+
+                <input type="text" class="input email" placeholder="公司邮箱">
+                <p class="error"></p>
+
+                <!-- <input class="btn btn-large btn-nav-blue submit htm-track" id="apply-com" data-hmt-category="提交申请" value="提交申请" type="submit"> -->
+                <input class="btn btn-large btn-nav-blue submit htm-track" id="apply-com" value="提交申请" type="submit">
+
+                <a href="javascript:void(0)" class="back btn btn-no-border">返回</a>
+            </form>
+
+            <p class="reg-login">已经注册？点击<a href="https://abtesting.appadhoc.com/#/" class="blue">登录</a></p>
+
+            <div class="result-container" id="ab-reg-result-container">
+                <img src="images/right.0a38eaad.svg" class="right-icon" alt="">
+                <p class="title">感谢您的申请</p>
+                <p class="text">我们将在1个工作日内与您联系</p>
+
+                <div class="result-bottom">
+                    <p class="time"><span id="reg-second"></span>秒后自动关闭</p>
+                    <a href="javascript:registerPopHide()" class="btn btn-wg-green btn-large btn-no-shadow" id="ab-close-reg">关闭</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
+
+<script type="text/javascript">
+(function(){
+function checkEmail(email){
+    if(email.match(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/)){
+        return true;
+    }else{
+        return false;
+    }
+}
+function checkCompanyEmail(email){
+    email = email.toLowerCase();
+
+    if (email.indexOf('@126') != -1 ||
+        email.indexOf('@163') != -1 ||
+        email.indexOf('@qq') != -1 ||
+        email.indexOf('@gmail') != -1 ||
+        email.indexOf('@hotmail') != -1 ||
+        email.indexOf('@sina') != -1 ||
+        email.indexOf('@sohu') != -1 ||
+        email.indexOf('@yahoo') != -1 ||
+        email.indexOf('@139') != -1 ||
+        email.indexOf('@foxmail') != -1 ||
+        email.indexOf('@outlook') != -1
+        ) {
+        return false;
+    }else{
+        return true;
+    }
+}
+
+function checkPhone(phone){
+    if (!phone.match(/^1\d{10}$/)) {
+        return false;
+    }else{
+        return true;
+    }
+}
+
+var phoneChange, emailChange;
+//注册弹窗配置
+var registerPopConfig = {
+	version: 'phoneemail',
+	// title: '免费试用',
+	// color: '#58c584'
+};
+var version = 'phoneemail';
+
+$('#form').on('submit', function(e){
+    // console.log('提交.................');
+    e.preventDefault();
+
+    var $this = $(this),
+        $phone = $this.find('.phone'),
+        $email = $this.find('.email'),
+        phone = $.trim($phone.val()),
+        email = $.trim($email.val());
+
+    // if(!checkPhone(phone)){
+    //     return $phone.next().html('请输入正确的手机号码');
+    // }
+    // if(!checkEmail(email)){
+    //     return $email.next().html('请输入正确的邮箱地址');
+    // }
+    // if(!checkCompanyEmail(email)){
+    //     return $email.next().html('请使用公司邮箱注册');
+    // }
+
+    $this.find('.submit').val('加载中...');
+	// switch(registerPopConfig.version){
+	// 	case 'freetrial':
+	// 		_hmt.push(['_trackEvent', '注册', '免费试用提交']);
+	// 		break;
+	// 	case 'contactsales':
+	// 		_hmt.push(['_trackEvent', '注册', '联系销售提交']);
+	// 		break;
+	// 	case '':
+	// 		break;
+    // }
+    
+    // console.log('申请表单提交啦。。。');
+    // $.ajax({
+    //     type: 'post',
+    //     dataType: 'json',
+    //     crossDrmain:true,
+    //     contentType: 'application/json',
+	// 	url: 'https://auth.appadhoc.com/applied_users',
+    //     data: JSON.stringify({ "email": email,"mobile": phone, version: registerPopConfig.version}),
+    //     success: function(data){
+    //         console.log('success', data);
+    //         showRegResult();
+    //     },
+    //     error: function(data){
+    //         console.log('error', data);
+    //         // showRegResult();
+    //         $this.find('.submit').val('重新提交');
+    //     }
+    // });
+
+
+
+}).find('.phone').on('keyup', function(){
+    var $this = $(this);
+
+    clearTimeout(phoneChange);
+    phoneChange = setTimeout(function(){
+        if(!checkPhone($this.val())){
+            return $this.next().html('请输入正确的手机号码');
+        }else{
+            return $this.next().html('');
+        }
+    }, 500);
+});
+$('.email').on('keyup', function(){
+    var $this = $(this);
+
+    clearTimeout(emailChange);
+    emailChange = setTimeout(function(){
+        var email = $this.val();
+        if(!checkEmail(email)){
+            return $this.next().html('请输入正确的邮箱地址');
+        }else if(!checkCompanyEmail(email)){
+            return $this.next().html('请使用公司邮箱注册');
+        }else{
+            return $this.next().html('');
+        }
+    }, 500);
+});
+
+var intervalHide;
+
+function showRegResult(){
+    $('.result-container').show();
+    var $sec = $('#reg-second').html('3');
+    intervalHide = setInterval(function(){
+        var sec = parseInt($sec.html());
+        sec--;
+        $sec.html(sec);
+        if(sec <= 0){
+            clearInterval(intervalHide);
+            slideUp();
+        }
+    }, 1000);
+}
+
+// 隐藏方法
+function slideUp(){
+    // register-content-slideup
+    var $inner = $('.register-pop-inner'),
+        hideClassName = 'register-pop-inner-hide';
+    if($inner.hasClass(hideClassName)){
+        return;
+    }
+    clearInterval(intervalHide);
+
+    $inner.addClass(hideClassName);
+    setTimeout(function(){
+        $('.register-pop-container').hide();
+        $inner.removeClass(hideClassName);
+        $('.result-container').hide();
+        $inner.find('.phone, .email').val('');
+        // $inner.find('.submit').val('提交申请');
+    }, 600);
+}
+// 点击隐藏
+$('.register-pop-inner').on('click', function(e){
+    var $tar = $(e.target);
+    if(e.target == this || $tar.hasClass('back')){
+        slideUp();
+    }
+})
+/**
+ * [弹出申请注册的弹窗]
+ * @method registerPopShow
+ * @param  {string} freetrial-免费试用、contactsales-联系销售、consultation-申请咨询
+ * @param  {string} title [弹窗title]
+ * @param  {string} color [弹窗颜色]
+ */
+window.registerPopShow = function(version, title, color){
+	// version = versionValue || 'phoneemail';
+	// version? registerPopConfig.version = version : '';
+	// title? registerPopConfig.title = title : '';
+	// color? registerPopConfig.color = color : '';
+
+	// var conf = registerPopConfig;
+	// $('#ab-reg-title').html(conf.title).css('color', conf.color);
+	// $('#apply-com').css('background', conf.color);
+	// $('#ab-reg-result-container').css('background', conf.color);
+	// $('#ab-close-reg').css('color', conf.color);
+
+    $('.register-pop-container').show();
+
+	// switch(registerPopConfig.version){
+	// 	case 'freetrial':
+	// 		_hmt.push(['_trackEvent', '注册', '免费试用按钮']);
+	// 		break;
+	// 	case 'contactsales':
+	// 		_hmt.push(['_trackEvent', '注册', '联系销售按钮']);
+	// 		break;
+	// 	case '':
+	// 		break;
+	// }
+}
+
+var url = window.location.href;
+var urlAnchor = url.split('#')[1];
+if(urlAnchor == 'apply'){
+    registerPopShow();
+}
+
+window.registerPopHide = function(){
+    slideUp();
+}
+})();
+</script>
+
+
+
+<script type="text/javascript">
+
+(function(){
+    var $nav = $('header.ab-nav-container'),
+        $logo = $('.header-logo'),
+        lastTop = $(document).scrollTop(),
+        timeout;
+
+    function toggleNav(top, force){
+        if(force){
+            if(top >= 5){
+                $nav.addClass('ab-nav-container-active');
+            }
+        }else if(lastTop > 5 && top <= 5){
+            $nav.removeClass('ab-nav-container-active');
+            lastTop = top;
+        }else if(lastTop <= 5 && top  > 5){
+            $nav.addClass('ab-nav-container-active');
+            lastTop = top;
+        }
+    }
+
+    $(document).on('scroll', function(e){
+        var top = $(this).scrollTop();
+        toggleNav(top);
+    });
+    toggleNav(lastTop, true);
+
+    //mobile
+    $('#ab-nav-mobile-right').on('click', function(){
+        var $this = $(this);
+
+        $this.toggleClass('ab-nav-mobile-right-active');
+
+        $('.ab-nav-menu-mobile')[ $this.hasClass('ab-nav-mobile-right-active')? 'show' : 'hide' ]();
+    });
+
+    $(".ab-nav-menu-mobile").on('click', function(e){
+        if(e.target == this){
+            var $mobileRight = $('#ab-nav-mobile-right');
+            $mobileRight.toggleClass('ab-nav-mobile-right-active');
+
+            $('.ab-nav-menu-mobile')[ $mobileRight.hasClass('ab-nav-mobile-right-active')? 'show' : 'hide' ]();
+        }
+    })
+
+    $("#js-btn-solve").on('click', function(e){
+        if(e.target == this){
+            var $mobileRight = $('#ab-nav-mobile-right');
+            $mobileRight.toggleClass('ab-nav-mobile-right-active');
+
+            $('.ab-nav-menu-mobile')[ $mobileRight.hasClass('ab-nav-mobile-right-active')? 'show' : 'hide' ]();
+        }
+    })
+
+})();
+</script>
+
+    
+<script type="text/javascript">
+   function test(){
+    //    console.log('123');
+	//显示元素
+	adhoc('show','.ab-nav-right');
+    alert('12');
+    }
+</script>
+
+<a id="a"></a>
+
+<section class="first-screen">
+    <div class="screen-section-inner first-screen-inner" id="js-title-edits">
+        <h1 id="js-test-editor" class="title 123" onClick="test()" abc="123" efg="456" style="font-style: italic;">连接数据与决策，让创新推动业务持续增长</h1>
+        <h1 onClick="test()" class="title" abc="123">连接数据与决策，让创新推动业务持续增长</h1>
+        <h1 onClick="test()" class="title" abc="123">连接数据与决策，<br >让创新推动业务持续增长</h1>
+        <h1>无属性标签</h1>
+        <h1 class="js-same-class">same class 01</h1>
+        <h1 class="js-same-class">same class 01</h1>
+        <h1 class="js-only-class">only class</h1>
+        <a id="js-editoe-a" href="http://www.appadhoc.com/" class="btn-no-border" alt="testsss" onClick="test()">产品及服务</a>
+        <div>
+            <!-- <form action="/demo/demo_form.asp"> -->
+            <form>
+                First name:<br>
+                <input type="text" name="firstname" value="Mickey">
+                <br>
+                Last name:<br>
+                <input type="text" name="lastname" value="Mouse">
+                <br><br>
+                <input type="submit" value="Submit" id="js-form-test" class="form-submit-test" xx='xx' cc='cc' zxt='zxt'>
+            </form> 
+        </div>
+        <p class="des">Appadhoc A/B Testing 提供专业高效的试验平台，低风险获取可靠决策数据，低成本实现产品快速迭代，从而保证业务健康持续增长。</p>
+        <img src="images/productService/productbanner.521895ea.png" srcset="images/productService/productbanner@2x.cc0d7ad6.png 2x" class="section-banner" alt="助力优秀企业走向卓越">
+    </div>
+    <div class="same-screen">
+        <p class="se">same parent 01 1111111</p>
+        <p class="se">same parent 01 22222222</p>
+    </div>
+    <div class="same-screen">
+        <p class="se">same parent 02 1111111111</p>
+        <p class="se">same parent 02  2222222</p>
+    </div>
+    <div class="only-screen" id="js-add-dom">
+        <p class="se">only parent 01</p>
+        <p class="se">only parent 02</p>
+    </div>
+    <div id="js-add-test">
+
+    </div>
+    <button onclick="myFunction()" id="butt">点我</button>
+
+    <script>
+        function myFunction(){
+            var para = document.createElement("p");
+            var node = document.createTextNode("这是一个新的段落。");
+            para.setAttribute("id","qq")
+            para.setAttribute("class","ww")
+
+            var para2 = document.createElement("p");
+            var node2 = document.createTextNode("这是一个新的段落22。");
+            para2.setAttribute("id","aa")
+            para2.setAttribute("class","bb")
+
+            var para3 = document.createElement("div");
+            para3.setAttribute("id","js-top-test")
+
+            para.appendChild(node);
+            para2.appendChild(node2);
+            var element = document.getElementById("js-add-test");
+            element.appendChild(para3);
+            para3.appendChild(para);
+            para3.appendChild(para2);
+        }
+
+
+    </script>
+	<!--<script type = 'text/javascript' > $(function() {
+    $('button').click(function() {
+		  //function:回调函数；
+		  adhoc('track', 'a', 1);
+	
+		  //track:表示这次函数调用的作用是上报数据;
+		  //clickTimes:这是上报指标名称，必须和平台填写的优化指标名称保持一致；
+		  //1:统计点击次数+1
+		});
+	})
+	</script>-->
+
+    <a><img src="images/productService/productbanner.521895ea.png" class="section-banner" alt="助力优秀企业走向卓越"></a>
+    <div>
+        <a href="https://www.baidu.com/" class="class-aa" id="aa-00-1" target="_blank">1产品及服务</a>
+        <a href="https://www.baidu.com/" class="class-aa" id="aa-00-2" target="_blank">2产品及服务</a>
+        <a href="https://www.baidu.com/" class="class-aa" id="aa-00-3" target="_blank">3产品及服务</a>
+        <a href="https://www.baidu.com/" class="class-aa" id="aa-00-4" target="_blank">4产品及服务</a>
+        <a href="https://www.baidu.com/" class="class-aa" id="aa-00-5" target="_blank">5产品及服务</a>
+        <a href="https://www.baidu.com/" class="class-aa" id="aa-00-6" target="_blank">6产品及服务</a>
+    </div>
+
+</section>
+
+<a id="b"></a>
+<section class="screen-section">
+	<div class="screen-section-inner">
+		<p class="title">产品特点</p>
+		<ul class="training-list clear">
+			<li>
+				<img class="class-img-test-0" src="images/productService/icon04.79d01860.png" alt="ab测试工具">
+				<p class="training-title">易用成熟</p>
+				<p class="training-des">快速上手试验，平台稳定健壮</p>
+			</li>
+			<li>
+				<img class="class-img-test-0" src="images/productService/icon05.6a901da0.png" alt="ab测试工具">
+				<p class="training-title">准确可信</p>
+				<p class="training-des">先进的统计分析与流量分割</p>
+			</li>
+			<li>
+				<img class="class-img-test-0" src="images/productService/icon06.041658c9.png" alt="ab测试工具">
+				<p class="training-title">专业定制</p>
+				<p class="training-des">多维度及定向试验支持</p>
+			</li>
+		</ul>
+	</div>
+</section>
+<section class="screen-section">
+	<div class="screen-section-inner">
+		<p class="title">产品特点</p>
+		<ul class="training-list clear">
+			<li>
+				<img src="images/productService/icon04.79d01860.png" srcset="images/productService/icon04@2x.010335db.png ,images/productService/icon04@2x.010335db.png 2x,images/productService/icon04@2x.010335db.png 3x" alt="ab测试工具">
+				<p class="training-title">易用成熟</p>
+				<p class="training-des">快速上手试验，平台稳定健壮</p>
+			</li>
+			<li>
+				<img src="images/productService/icon05.6a901da0.png" srcset="images/productService/icon05@2x.2d205786.png 2x,images/productService/icon05@2x.2d205786.png 3x,images/productService/icon05@2x.2d205786.png 4x" alt="ab测试工具">
+				<p class="training-title">准确可信</p>
+				<p class="training-des">先进的统计分析与流量分割</p>
+			</li>
+			<li>
+				<img src="images/productService/icon06.041658c9.png" srcset="images/productService/icon06@2x.2fef1115.png 400w,images/productService/icon06@2x.2fef1115.png 600w,images/productService/icon06@2x.2fef1115.png 1200w," alt="ab测试工具">
+				<p class="training-title">专业定制</p>
+				<p class="training-des">多维度及定向试验支持</p>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<a id="c"></a>
+<section class="screen-section">
+	<div class="screen-section-inner">
+		<p class="title">客户成功</p>
+		<p class="des">实战经验丰富、多领域覆盖的客户成功团队，既能提供完善的行业解决方案，又能与产品团队一起挖掘优化方向，制定专属增长策略。</p>
+		<img src="images/productService/product01.93b8ad7f.png" srcset="images/productService/product01@2x.39894421.png 2x" alt="ab测试工具" class="section-banner">
+	</div>
+</section>
+
+
+<a id="d"></a>
+<section class="screen-section">
+	<div class="screen-section-inner">
+		<p class="title">咨询服务</p>
+		<p class="des">专业顾问全程参与，共同分析用户需求，输出试验方案并执行试验；以业务增长为目标，建立“分析>假设>试验>优化”的持续增长机制。</p>
+		<img src="images/productService/product02.fdc97379.png" srcset="images/productService/product02@2x.81b3d5c8.png 2x" alt="ab测试工具" class="section-banner">
+	</div>
+</section>
+
+
+<a id="e"></a>
+<section class="screen-section">
+	<div class="screen-section-inner">
+		<p class="title">培训服务</p>
+		<ul class="training-list clear">
+			<li>
+				<img src="images/productService/icon07.678a62ae.png" srcset="images/productService/icon07@2x.dc103f57.png 2x" alt="ab测试工具">
+				<p class="training-title">从入门到精通</p>
+				<p class="training-des">快速掌握并上线A/B 测试</p>
+			</li>
+			<li>
+				<img src="images/productService/icon08.81f8190c.png" srcset="images/productService/icon08@2x.f37600f0.png 2x"  alt="ab测试工具">
+				<p class="training-title">甄选典型案例</p>
+				<p class="training-des">优质案例分析及行业最佳实践</p>
+			</li>
+			<li>
+				<img src="images/productService/icon09.337987d6.png" srcset="images/productService/icon09@2x.9f0b68db.png 2x"  alt="ab测试工具">
+				<p class="training-title">试验永不止步</p>
+				<p class="training-des">建立试验驱动型增长体系</p>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<section class="screen-section">
+        <div class="screen-section-inner">
+            <p class="title">培训服务</p>
+            <p>
+                <img class="js-test-attr aa" src="images/productService/icon07.678a62ae.png" alt="ab测试工具">
+                <img class="js-test-attr aa" src="images/productService/icon08.81f8190c.png" alt="ab测试工具">
+                <img class="aa" src="images/productService/icon09.337987d6.png" alt="ab测试工具">
+                <img class="aa" src="images/productService/icon09.337987d6.png" alt="ab测试工具">
+            </p>
+            <p>
+                <img id="js-img-edit" class="js-qqtest-attr" src="images/productService/icon07.678a62ae.png" alt="ab测试工具">
+                <img id="js-img-edit" class="js-qqtest-attr" src="images/productService/icon08.81f8190c.png" alt="ab测试工具">
+                <img id="js-img-edit" class="js-qqtest-attr" src="images/productService/icon09.337987d6.png" alt="ab测试工具">
+                <img id="js-img-edit" class="js-qqtest-attr" src="images/productService/icon09.337987d6.png" alt="ab测试工具">
+            </p>
+            <p>
+                <img src="images/productService/icon07.678a62ae.png" srcset="images/productService/icon07@2x.dc103f57.png 2x" alt="ab测试工具">
+                <img src="images/productService/icon08.81f8190c.png" srcset="images/productService/icon08@2x.f37600f0.png 2x"  alt="ab测试工具">
+                <img src="images/productService/icon09.337987d6.png" srcset="images/productService/icon09@2x.9f0b68db.png 2x"  alt="ab测试工具">
+                <img src="images/productService/icon09.337987d6.png" srcset="images/productService/icon09@2x.9f0b68db.png 2x"  alt="ab测试工具">
+            </p>
+            <p>
+                <img src="images/productService/icon07.678a62ae.png" alt="ab测试工具">
+                <img src="images/productService/icon08.81f8190c.png" alt="ab测试工具">
+                <img src="images/productService/icon09.337987d6.png" alt="ab测试工具">
+                <img src="images/productService/icon09.337987d6.png" alt="ab测试工具">
+            </p>
+            <p>
+                <input type="text" placeholder="123" value="00">
+            </p>
+
+            <p>
+                <img src="images/productService/iconvip.png"
+                    srcset="images/productService/icon1.png 128w, images/productService/icon2.png 256w, images/productService/icon3.png 512w"
+                    sizes="(max-width: 360px) 340px, 60px" />
+            </p>
+            <p>
+                <img src="images/productService/iconvip.png"
+                    srcset="images/productService/icon1.png 128w, images/productService/icon2.png 256w, images/productService/icon3.png 512w"
+                    sizes="(max-width: 360px) 340px, 128px" />
+            </p>
+            <div class="test-a-img">
+                <a class="testss" href="https://www.baidu.com/">
+                    <p class="img">
+                        <img src="images/productService/iconvip.png"/>
+                    </p>
+                </a>
+            </div>
+            
+           
+        </div>
+    </section>
+
+
+
+
+    
+        <section class="footer-screen screen">
+    <div class="footer-line">
+        <a href="//www.appadhoc.com/productService.html" class="btn btn-white btn-left btn-large">了解更多</a>
+        <a href="javascript:registerPopShow()" id="js-btn-apply02" data-hmt-category="马上测试" class="btn btn-green btn-right btn-large htm-track">马上测试</a>
+    </div>
+</section>
+
+
+<section class="map-screen screen">
+    <div class="map-screen-content">
+        <ul class="map-screen-content-inner">
+            <li>
+                <dl>
+                    <dt class="map-screen-title">首页</dt>
+                    <dd class="map-screen-list"><a href="//www.appadhoc.com/index.html#b" >核心价值</a></dd>
+                    <dd class="map-screen-list"><a href="//www.appadhoc.com/index.html#c" >产品特点</a></dd>
+                    <dd class="map-screen-list"><a href="//www.appadhoc.com/index.html#d" rel="nofollow" >解决方案</a></dd>
+                    <dd class="map-screen-list"><a href="//www.appadhoc.com/index.html#e" rel="nofollow" >最佳实践</a></dd>
+                <dl>
+            </li>
+            <li>
+                <dl>
+                    <dt class="map-screen-title">产品及服务</dt>
+                    <dd class="map-screen-list"><a href="//www.appadhoc.com/productService.html#a" >总体特征</a></dd>
+                    <dd class="map-screen-list"><a href="//www.appadhoc.com/productService.html#b" >具体特点</a></dd>
+                    <dd class="map-screen-list"><a href="//www.appadhoc.com/productService.html#c" >客户成功</a></dd>
+                    <dd class="map-screen-list"><a href="//www.appadhoc.com/productService.html#d" >咨询</a></dd>
+                    <dd class="map-screen-list"><a href="//www.appadhoc.com/productService.html#e" >培训服务</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt class="map-screen-title">解决方案</dt>
+                    <dd class="map-screen-list"><a href="//www.appadhoc.com/eshop.html" >电商</a></dd>
+                    <dd class="map-screen-list"><a href="//www.appadhoc.com/banking.html" >金融</a></dd>
+                    <dd class="map-screen-list"><a href="//www.appadhoc.com/education.html" >教育</a></dd>
+                    <dd class="map-screen-list"><a href="//www.appadhoc.com/trip.html" >旅游</a></dd>
+                </dl>
+            </li>
+            <li >
+                <dl>
+                    <dt class="map-screen-title">资源中心</dt>
+                    <dd class="map-screen-list"><a href="http://www.appadhoc.com/blog/category/instance/" >案例库</a></dd>
+                    <dd class="map-screen-list"><a href="//www.appadhoc.com/startGuide.html" >快速上手指南</a></dd>
+                    <dd class="map-screen-list"><a href="//www.appadhoc.com/doc.html" >文档中心</a></dd>
+                    <dd class="map-screen-list"><a href="http://www.appadhoc.com/blog" >博客</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt class="map-screen-title">关于我们</dt>
+                    <dd class="map-screen-list"><a href="//www.appadhoc.com/aboutus.html#heart" >不忘初心</a></dd
+                    ><dd class="map-screen-list"><a href="//www.appadhoc.com/aboutus.html#story" >时光故事</a></dd>
+                </dl>
+            </li>
+        </ul>
+        
+    </div>
+    
+    <p class="map-footer">北京吆喝科技有限公司  ©Copyright 2014 - 2017 AppAdhoc   京ICP备15027542号  经营性许可证编号：京ICP证151034号
+        <span class="mpa-footer-links">
+            <a href="/clause.html" rel="nofollow" class="blue">服务条款</a>
+            <a href="/privacy.html" rel="nofollow" class="blue">隐私政策</a>
+            <a href="/aboutus.html" rel="nofollow" class="blue">关于我们</a>
+        </span>
+    </p>
+</section>
+
+    <script src="scripts/header.a982303e.js"></script>
+  
+  </body>
+  
+</html>

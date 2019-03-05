@@ -1,0 +1,1 @@
+"use strict";$(function(){var a,b=2;window.CountDown=function(){$("#num").text(b),0==b&&(clearInterval(a),window.location.href="http://www.appadhoc.com/"),b--},a=setInterval(CountDown,1e3)});

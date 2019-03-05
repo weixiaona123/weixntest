@@ -1,0 +1,70 @@
+<DOCTYPE html>
+    <html>
+        <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv=X-UA-Compatible content="IE=edge,chorme=1"/>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+        <!-- <meta http-equiv="refresh" content="2"/> -->
+        <meta name="keywords" content="nihao,haha,anzhuo"/>
+        <meta name="description" content="yaiisidsisifsofidsoids我的描述"/>
+        <link rel="dns-prefetch" href="//tmm.taobao.com"/>
+        <title>Js Demo</title>
+        <!-- 引用ico图标 -->
+        <Link rel="shortcut icon" type="image/x-icon" href="images/favricon.ico"/>
+		<script src="scripts/vendor/ab.plus.js" charset="utf-8"></script>
+		<!--  <script src="https://sdk.appadhoc.com/ab.plus.js" charset="utf-8"></script>-->
+		<!--<script src="https://sdk.appadhoc.com/ab.super.js" charset="utf-8"></script>-->
+	   <script type="text/javascript">
+
+			adhoc('init', {
+				appKey: 'ADHOC_56899d35-dc4b-48a6-9e63-9ed61f715dfd'
+			})
+		</script>
+		<script>
+				var ids = "";
+				var clientid="";
+				var url = location.search; //获取url中"?"符后的字串 
+			   console.log("url--"+url);
+			   //var theRequest = new Object();   
+			   if (url.indexOf("?") != -1) {   
+				  var str = url.substr(1);   
+				  console.log("str--"+str);
+				  strs = str.split("&");   
+				  for(var i = 0; i < strs.length; i ++) {   
+						var key = strs[i].split("=")[0];
+						var value = strs[i].split("=")[1];
+						if(key=='ids'){
+							ids=value;
+						}else if(key=='clientid'){
+							clientid=value
+						}							
+				  }   
+			   }   
+			console.log("ids--"+ids+"--clientid--"+clientid);
+			  
+			
+		</script>
+		 <script type = 'text/javascript' > 
+		 function shangbao() {
+		   adhoc('corssTrack',{
+			 appKey: 'ADHOC_56899d35-dc4b-48a6-9e63-9ed61f715dfd',
+			 clientId: clientid,
+			 expids: [ids]
+		   }, 'click', 1, function(err) {
+			 
+		   });
+		  }
+		</script>
+        </head>
+        <body>
+        <style type="text/css">
+            .hilite{
+                background-color:red;
+            }
+        </style>
+            <p>跨到新页面啦</p>
+			<button href="" onclick="shangbao()">统计点击次数</button>
+            
+
+        </body>
+    </html>
